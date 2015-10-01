@@ -42,7 +42,7 @@ consumes NCBI data directly
   * Software product, for clinical genomics professionals, manage, curate, report genomic variation
   * Has own data library -- data from NCBI
 
-## Variant Identification:
+## Variant Identification
 ### Germline Callers
 1. **[IMPUTE2] (http://mathgen.stats.ox.ac.uk/impute/impute_v2.html)**
   * Description: phasing observed genotypes and imputing missing genotypes uses reference panels to provide all available halotypes, does not use population labels or genome-wide measures; designed to represent variation in one population; Fairly popular
@@ -283,7 +283,7 @@ on github, example data uses 1000 genomes dataset
   * Input: BAM (must be sorted and indexed- samtools sort)
   * Output: VCF and report file
 
-### Germline + Somatic  Callers:
+### Germline + Somatic  Callers
 1. **[VarScan 2] (http://massgenomics.org/varscan)**
   * Description: identify germline variants, private and shared variants, somatic mutations, and somatic CNVs; detects indels
   * Input: SAMtools pileup
@@ -318,7 +318,7 @@ on github, example data uses 1000 genomes dataset
   * Input: BAM or VCF files (from SAMtools, GATK)
   * Output:
 
-## Downstream Analysis of Variants:
+## Downstream Analysis of Variants
 1. **[PrediXcan] (https://github.com/hakyimlab/PrediXcan https://github.com/hriordan/PrediXcan/)**
   * Description: command-line, standalone package program; available in Perl, Python, and R versions; predicts liklihood of a gene being related to a certain phenotype- “that directly tests the molecular mechanisms through which genetic variation affects phenotype.”; no actual expression data used, only in silico expression; “PrediXcan can detect known and novel genes associated with disease traits and provide insights into the mechanism of these associations.”
   * Input: genotype and phenotype file (doesn’t specify file type)
@@ -357,7 +357,7 @@ on github, example data uses 1000 genomes dataset
   * Input: PLINK format
   * Output:.reml, .indi.blp
 
-### CNV (copy number variations) Identification:   
+## CNV (copy number variations) Identification  
 1. **[cn.MOPS] (http://bioconductor.org/packages/2.12/bioc/html/cn.mops.html)**
   * Description: Bioconductor; “Mixture of Poissons for CNV detection of NGS data”; models depth of coverage at each genomic position to reduce read count bias; Bayesian approach, written in C++
   * Input: Read count matrices, genomic range objects (has ability to convert BAM files to these)
@@ -438,7 +438,7 @@ on github, example data uses 1000 genomes dataset
    * Reference file: FASTA
   * Output: STDOUT plot in PDF
 
-### Variant Annotation
+## Variant Annotation
 1. **[ANNOVAR] (http://annovar.openbioinformatics.org/en/latest/)**
   * Description: command-line tool, supports SNPs, INDELs, CNVs and block substitutions, provides wide variety of annotation techniques, depends upon multiple databases (each needing to be downloaded); annotates genetic variants; utilizes RefSeq, UCSC Genes, and the Ensembl gene annotation systems; can compare mutations detected in dpSNP or 1000 Genomes Project; Very popular
    *“The final command run TABLE_ANNOVAR, using dbSNP version 138, 1000 Genomes Project 2014 Oct version, NIH-NHLBI 6500 exome database version 2 (referred to as esp6400siv2), dbNFSP version 2.6 (referred to as ljb26), dbSNP version 138 (referred to as snp138) databases and remove all temporary files, and generates the output file called myanno.hg19_multianno.txt”
