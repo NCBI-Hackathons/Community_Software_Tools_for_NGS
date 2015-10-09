@@ -327,6 +327,10 @@ on github, example data uses 1000 genomes dataset
   * Description: Analysis Tool for Heritable and Environmental Network Associations; software package, combines machine learning model with biology and statistics to predict non-linear interactions
   * Input: Configuration file, Data file, Map file (includes rsID)
   * Output: Summary file, Best model file, dot file, individual score file, cross-validation file
+1. **[CCRaVAT and QuTie] (http://www.sanger.ac.uk/resources/software/rarevariant/#t_2)**
+  * Description: (Wellcome Trust Sanger) Case-Control Rare Variant Analysis Tool and Quantitative Trait; software packages for large-scale analysis of rare variants
+  * Input: PED file and MAP file
+  * Output: Five tab-delimited txt files
 1. **[GCTA] (http://cnsgenomics.com/software/gcta/)**
   * Description: Genome Wide Complex Trait Analysis; package program, command line interface; estimates variance by all SNPs; 5 main functions: “data management, estimation of the genetic relationships from SNPs, mixed linear model analysis of variance explained by the SNPs, estimation of the linkage disequilibrium structure, and GWAS simulation”
   * Input: PLINK binary PED files, MACH output format
@@ -499,6 +503,10 @@ on github, example data uses 1000 genomes dataset
   * Description: “local database infrastructure for analysis of targeted- and whole genome re-sequencing projects”; dependent on MySQL, R, and ANNOVAR
   * Input:
   * Output:
+1. **[CAROL] (http://www.sanger.ac.uk/resources/software/carol/)**
+  * Description: (Wellcome Trust Sanger); Combined Annotation scoRing toOL; Combined functional annotation score of nonsynonymous coding variants; Combines information from PolyPhen-2 and SIFT
+  * Input: tab-delimited with columns obtained from PolyPhen-2 and SIFT output
+  * Output: tab-delimited file
 1. **[CHASM] (http://wiki.chasmsoftware.org/index.php/Main_Page)**
   * Description: Cancer-specific High-throughput Annotation of Somatic Mutations; Last updated May 2014; uses Random Forest Method to “distinguish between driver and passenger somatic mutations”; Positive driver class curated from COSMIC database; packed together with  SNVBox (database)
   * Input:Passenger mutation rates, Transcript and amino acid change, Genomic coordinates
