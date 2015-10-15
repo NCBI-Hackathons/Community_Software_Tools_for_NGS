@@ -347,6 +347,10 @@ on github, example data uses 1000 genomes dataset
   * Description: animal gene mapping; “genomic prediction and variance component estimation of additive and dominance effects”; standalone program, command line interface, writting in C++ and Java
   * Input:
   * Output:
+1. **[HOMOG] (http://www.jurgott.org/linkage/homog.htm)**
+  * Description: Analyzes heterogeneity with respect to single marker loci or known maps of markers; Carries out homogeneity test for alternative hypothesis “Two family types, one with linkage betweeen a trait to a marker or map of markers, the other without linkage”
+  * Input: HOMOG.DAT - described on website
+  * Output: HOMOG.OUT
 1. **[INTERSNP] (http://intersnp.meb.uni-bonn.de/)**
   * Description: GWIA for case-control SNP and quantitative traits; selected for joint analysis using priori information; Provides linear regression framework, Pathway Association Analysis, Genome-wide Haplotype Analysis,
   * Input: PLINK input formats (ped/map, tped/tfam, bed/bim/fam) Compatible with SetID files
@@ -360,87 +364,6 @@ on github, example data uses 1000 genomes dataset
   * Description: Package program, command line interface; constructs linear prediction models; Best Linear Unbiased Prediction; improves upon BLUP involving kinship matrices; options: pre-specified kinships, regional kinships, adaptive multiblups, LD weightings
   * Input: PLINK format
   * Output:.reml, .indi.blp
-
-## CNV (copy number variations) Identification  
-1. **[cn.MOPS] (http://bioconductor.org/packages/2.12/bioc/html/cn.mops.html)**
-  * Description: Bioconductor; “Mixture of Poissons for CNV detection of NGS data”; models depth of coverage at each genomic position to reduce read count bias; Bayesian approach, written in C++
-  * Input: Read count matrices, genomic range objects (has ability to convert BAM files to these)
-  * Output:
-1. **[CNA-Seq] (http://chipster.csc.fi/manual/cna-define-experiment.html)**
-  * Description: Tool in Chipster analytical pipeline, count reads in bins, segment, and call copy number aberrations, plots CNV profiles, identifies common regions, tests DNA copy number induced differential expression, plots combined profiles and copy numbers, adds cytogenic bands, and counts overlapping CNVs by comparing database of genomic variants (http://dgv.tcag.ca/dgv/app/home)
-  * Input:
-  * Output:
-1. **[CNValidator] (https://code.google.com/p/cnvalidator/)**
-  * Description: Package program, Command line interface; “Identifies CNVs based on homozygous SNPs and the ratio of heterozygous SNP reads”;
-  * Input: text based tab-delimited files
-  * Output: txt output
-1. **[CNVer] (http://compbio.cs.toronto.edu/cnver/)**
-  * Description: Package program, command line interface; “supplements the depth-of-coverage with paired-end mapping”; Donor graph- unified framework- reduces sequence biases; only works with human build hg19 and hg18
-  * Input: BAM, tab delimited text
-  *Output:
-1. **[CNVrd2] (http://www.bioconductor.org/packages/devel/bioc/html/CNVrd2.html)**
-  * Description: Part of Bioconductor; package program with command line interface; “measure human gene copy number for multiple samples”; written in R
-  * Input: multiple; imports from DNAcopy, IRange, Rsamtools
-  * Output:
-1. **[CONTRA] (http://sourceforge.net/projects/contra-cnv/)**
-  * Description: detects CNVs in whole-exome data, requires Python and R, dependent on BEDtools and SAMtools
-  * Input: BAM/SAM
-   * Reference genome: Ensembl or 1000genomes
-  * Output: VCF
-1. **[CopyCat] (http://tvap.genome.wustl.edu/tools/copycat/)**
-  * Description: Currently under “active development” according to website; utilizes multi-core architecture; “detects copy number aberrations by measuring the depth of coverage
-  * Input:
-  * Output:
-1. **[GASV] (https://code.google.com/p/gasv/)**
-  * Description: Geometric Analysis of Structural Variants
-  * Input: BAM
-  * Output:
-1. **[GENSENG/AS-GENSENG] (http://sourceforge.net/projects/asgenseng/?source=directory)**
-  * Description: uses Markhov model; read-depth-based method; identifies regions of discrete copy-number changes while accounting for confounders
-  * Input: BAM
-  * Output: two txt files
-1. **[GROM-RD] (http://grigoriev.rutgers.edu/software/grom-rd/index.html)**
-  * Description: Standalone program, command line interface; analyzes multiple biases to detect CNVs. More sensitive than CNVnator or RDXplorer
-  * Input: BAM
-  * Output: “union set of predicted CNV’s from two pipelines”
-1. **[m-HMM] (https://www.stt.msu.edu/users/hengwang/mHMM.html)**
-  * Description: written in R, the “mixture hidden Markov model” to detect CNVs, package program, command-line interface
-  * Input:
-  * Output: “data frame of the resulting CNV detection”
-1. **[Magnolya] (http://sourceforge.net/projects/magnolya/)**
-  * Description: “de novo CNV detection by co-assembly”; No reference genome needed, compared two NGS datasets; package program, command-line interface, written in Python
-  * Input: FASTA
-  * Output:
-1. **[modSaRa] (http://c2s2.yale.edu/software/modSaRa/)**
-  * Description: package program, command-line interface; written in R; “modified Screening and Ranking algorithm”; performs quantile normalization, searches for change-point canidates, eliminates unlikely change points, outputs potential CNV segments
-  * Input:
-  * Output:
-1. **[PEMer] (http://sv.gersteinlab.org/pemer/)**
-  * Description: Package program, command-line interface; restricted to academic users only, written in Perl and Python; simulation-based error models; three modules- PEMer workflow, SV-Simulation,   BreakDB (own database);
-  * Input: FASTA
-  * Output:
-1. **[QDNAseq] (http://www.bioconductor.org/packages/release/bioc/html/QDNAseq.html)**
-  * Description: (Bioconductor) package program, written in R; WGS method for CNV analysis; dependent on R; “the genome is divided into non-overlapping fixed-sized bins, number of sequence reads in each counted, adjusted with a simultaneous two-dimensional loess correction for sequence mappability and GC content, and filtered to remove spurious regions in the genome”
-  * Input: BAM
-  * Output: “read counts per bin, which have been corrected, filtered, normalized, and optionally log2-transformed”
-1. **[readDepth] (https://github.com/chrisamiller/readDepth)**
-  * Description: package program, command-line; written in R; measures depth of coverage obtained by massively parallel sequencing; “niche uses...obsolete on human data”
-  * Input: BED
-  * Output: segs.dat or alts.dat
-1. **[SLOPE] (http://www-genepi.med.utah.edu/suppl/SLOPE/slope_guide.txt)**
-  * Description: package program, command-line; written in C++; “detects structural variants from targeted short DNA reads”; quickly detects insertions and deletions
-  * Input:SAM/FASTQ/MAQ
-   * Reference file: FASTA
-  * Output: html file
-1. **[TIGRA] (http://bioinformatics.mdanderson.org/main/TIGRA)**
-  * Description: package program, command-line, for academic users only; written in C++; “conducts targeted local assembly of SV”; Uses data from 1000 Genomes
-  * Input: “SV calls and a set of bam files that contain reads mapped to a reference genome such as NCBI build36.”
-  * Output:
-1. **[WISECONDOR] (http://omictools.com/wisecondor-s1816.html)**
-  * Description: “WIthin-SamplE COpy Number aberration”; package program, command-line; written in Python; “Detect fetal trisomies and smaller CNV's in a maternal plasma sample using whole-genome data.”
-  * Input: SAM, BAM
-   * Reference file: FASTA
-  * Output: STDOUT plot in PDF
 
 ## Variant Annotation
 1. **[ANNOVAR] (http://annovar.openbioinformatics.org/en/latest/)**
@@ -559,6 +482,10 @@ on github, example data uses 1000 genomes dataset
 1. **[LARVA] (http://larva.gersteinlab.org/)**
   * Description: Large-scale Analysis of Variants in noncoding Annotations; New version released July 2015; Command-line program; used for studying noncoding variants; integrates comprehensive set of noncoding elements, modeling their mutation count; Dependent on C++ and BEDtools
   * Input: multiple
+  * Output:
+1. **[LINKAGE] (http://www.jurgott.org/linkage/LinkagePC.html)**
+  * Description:three main programs: mlink (calculates lod scores at fixed values for the recombination fraction in one interval of a genetic map), linkmap (calculates location scores for positions of a disease locus along a marker), and ilink (estimates parameters including recombination fractions, allele frequencies, penetrances, etc)
+  * Input: pedfile (processed by MAKEPED) and datafile (reflects loci for each individual; set in PREPLINK)
   * Output:
 1. **[MAC] (http://sourceforge.net/projects/mnvannotationcorrector/)**
   * Description: MNV Annotation Corrector; Ad hoc software, fixes incorrect amino acid predictions that are caused by multiple nucleotide variations; Uses existing annotators ANNOVAR, SnpEff, VEP (last update April 2015) (only 1 download this week → not popular)
@@ -695,3 +622,84 @@ on github, example data uses 1000 genomes dataset
   * Input: VCF, FASTA, Phylip, MAF, plus others
    * Reference sequence: FASTA
   * Output:
+
+## CNV (copy number variations) Identification  
+1. **[cn.MOPS] (http://bioconductor.org/packages/2.12/bioc/html/cn.mops.html)**
+  * Description: Bioconductor; “Mixture of Poissons for CNV detection of NGS data”; models depth of coverage at each genomic position to reduce read count bias; Bayesian approach, written in C++
+  * Input: Read count matrices, genomic range objects (has ability to convert BAM files to these)
+  * Output:
+1. **[CNA-Seq] (http://chipster.csc.fi/manual/cna-define-experiment.html)**
+  * Description: Tool in Chipster analytical pipeline, count reads in bins, segment, and call copy number aberrations, plots CNV profiles, identifies common regions, tests DNA copy number induced differential expression, plots combined profiles and copy numbers, adds cytogenic bands, and counts overlapping CNVs by comparing database of genomic variants (http://dgv.tcag.ca/dgv/app/home)
+  * Input:
+  * Output:
+1. **[CNValidator] (https://code.google.com/p/cnvalidator/)**
+  * Description: Package program, Command line interface; “Identifies CNVs based on homozygous SNPs and the ratio of heterozygous SNP reads”;
+  * Input: text based tab-delimited files
+  * Output: txt output
+1. **[CNVer] (http://compbio.cs.toronto.edu/cnver/)**
+  * Description: Package program, command line interface; “supplements the depth-of-coverage with paired-end mapping”; Donor graph- unified framework- reduces sequence biases; only works with human build hg19 and hg18
+  * Input: BAM, tab delimited text
+  *Output:
+1. **[CNVrd2] (http://www.bioconductor.org/packages/devel/bioc/html/CNVrd2.html)**
+  * Description: Part of Bioconductor; package program with command line interface; “measure human gene copy number for multiple samples”; written in R
+  * Input: multiple; imports from DNAcopy, IRange, Rsamtools
+  * Output:
+1. **[CONTRA] (http://sourceforge.net/projects/contra-cnv/)**
+  * Description: detects CNVs in whole-exome data, requires Python and R, dependent on BEDtools and SAMtools
+  * Input: BAM/SAM
+   * Reference genome: Ensembl or 1000genomes
+  * Output: VCF
+1. **[CopyCat] (http://tvap.genome.wustl.edu/tools/copycat/)**
+  * Description: Currently under “active development” according to website; utilizes multi-core architecture; “detects copy number aberrations by measuring the depth of coverage
+  * Input:
+  * Output:
+1. **[GASV] (https://code.google.com/p/gasv/)**
+  * Description: Geometric Analysis of Structural Variants
+  * Input: BAM
+  * Output:
+1. **[GENSENG/AS-GENSENG] (http://sourceforge.net/projects/asgenseng/?source=directory)**
+  * Description: uses Markhov model; read-depth-based method; identifies regions of discrete copy-number changes while accounting for confounders
+  * Input: BAM
+  * Output: two txt files
+1. **[GROM-RD] (http://grigoriev.rutgers.edu/software/grom-rd/index.html)**
+  * Description: Standalone program, command line interface; analyzes multiple biases to detect CNVs. More sensitive than CNVnator or RDXplorer
+  * Input: BAM
+  * Output: “union set of predicted CNV’s from two pipelines”
+1. **[m-HMM] (https://www.stt.msu.edu/users/hengwang/mHMM.html)**
+  * Description: written in R, the “mixture hidden Markov model” to detect CNVs, package program, command-line interface
+  * Input:
+  * Output: “data frame of the resulting CNV detection”
+1. **[Magnolya] (http://sourceforge.net/projects/magnolya/)**
+  * Description: “de novo CNV detection by co-assembly”; No reference genome needed, compared two NGS datasets; package program, command-line interface, written in Python
+  * Input: FASTA
+  * Output:
+1. **[modSaRa] (http://c2s2.yale.edu/software/modSaRa/)**
+  * Description: package program, command-line interface; written in R; “modified Screening and Ranking algorithm”; performs quantile normalization, searches for change-point canidates, eliminates unlikely change points, outputs potential CNV segments
+  * Input:
+  * Output:
+1. **[PEMer] (http://sv.gersteinlab.org/pemer/)**
+  * Description: Package program, command-line interface; restricted to academic users only, written in Perl and Python; simulation-based error models; three modules- PEMer workflow, SV-Simulation,   BreakDB (own database);
+  * Input: FASTA
+  * Output:
+1. **[QDNAseq] (http://www.bioconductor.org/packages/release/bioc/html/QDNAseq.html)**
+  * Description: (Bioconductor) package program, written in R; WGS method for CNV analysis; dependent on R; “the genome is divided into non-overlapping fixed-sized bins, number of sequence reads in each counted, adjusted with a simultaneous two-dimensional loess correction for sequence mappability and GC content, and filtered to remove spurious regions in the genome”
+  * Input: BAM
+  * Output: “read counts per bin, which have been corrected, filtered, normalized, and optionally log2-transformed”
+1. **[readDepth] (https://github.com/chrisamiller/readDepth)**
+  * Description: package program, command-line; written in R; measures depth of coverage obtained by massively parallel sequencing; “niche uses...obsolete on human data”
+  * Input: BED
+  * Output: segs.dat or alts.dat
+1. **[SLOPE] (http://www-genepi.med.utah.edu/suppl/SLOPE/slope_guide.txt)**
+  * Description: package program, command-line; written in C++; “detects structural variants from targeted short DNA reads”; quickly detects insertions and deletions
+  * Input:SAM/FASTQ/MAQ
+   * Reference file: FASTA
+  * Output: html file
+1. **[TIGRA] (http://bioinformatics.mdanderson.org/main/TIGRA)**
+  * Description: package program, command-line, for academic users only; written in C++; “conducts targeted local assembly of SV”; Uses data from 1000 Genomes
+  * Input: “SV calls and a set of bam files that contain reads mapped to a reference genome such as NCBI build36.”
+  * Output:
+1. **[WISECONDOR] (http://omictools.com/wisecondor-s1816.html)**
+  * Description: “WIthin-SamplE COpy Number aberration”; package program, command-line; written in Python; “Detect fetal trisomies and smaller CNV's in a maternal plasma sample using whole-genome data.”
+  * Input: SAM, BAM
+   * Reference file: FASTA
+  * Output: STDOUT plot in PDF
