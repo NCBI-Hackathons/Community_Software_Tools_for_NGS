@@ -22,10 +22,23 @@ has sra.dnanexus.com site: data downloads come directly from NCBI
 1. **[NextGENe] (http://www.softgenetics.com/NextGENe.html)**
   * “perfect analytical partner for the analysis of desktop sequencing data produced by the ION PGM™, Roche Junior, Illumina MiSeq as well as high throughput systems as the Ion Torrent Proton, Roche FLX, Applied BioSystems SOLiD™ and Illumina® platforms.” runs on Windows, free-standing multi-application package-- SNP/Indel analysis, CNV prediction and disease discovery, whole genome alignment, etc.  
   * Data can be imported from Clinvar, dbSNP, Genbank: http://www.softgenetics.com/PDF/NextGene_UsersManual_web.pdf
-1. **[Partek Genomics Suite (Partek GS)] (http://www.partek.com/pgs)**
-  * cited in over 800 articles in 2013, “ability to support all next generation sequencing.. platforms”, analysis and visualization capabilities
-  * Can input GEO SOFT files→ http://www.partek.com/Tutorials/microarray/User_Guides/GEO_Import_Guide.pdf
-  * RNAseq- Sequenced on Illumina, output- BAM that can supported by Genomics Suite, ELAND, Bowtie, BWA, TopHat-- http://www.partek.com/Tutorials/microarray/NextGen/RNASeqTutorial.pdf
+1. **[Partek Genomics Suite] (http://www.partek.com/pgs)**
+  * Cited in over 3,500 peer-reviewed scientific publications
+  * Workflows for microarray and PCR data include: Gene expression including alternative splicing, miRNA expression, Genome Wide Association Studies, Mother-Father-Child Trio analysis, DNA Copy number including allele specific copy number and Loss of Heterozygosity (LOH), and ChIP, and methylation. Next Generation Sequencing (NGS) workflows include: RNA-Seq, miRNA-Seq, ChIP-Seq, DNA-Seq, and Methylation
+  * Powerful statistics and interactive, publication ready visualizations
+  * Supports all commercial next generation sequencing and microarray file format as well as text files
+  * Can input GEO SOFT files
+1. **[Partek Flow] (http://www.partek.com/partekflow)**
+  * Installation can be cloud-based or on a local cluster or Linux server
+  * Easy to use point-and-click interface
+  * Takes NGS data (.fastq, BAM, SAM), microarrays (Affymetrix, Illumina) and text files
+  * Supports custom genome builds and annotation databases
+  * Performs base trimming, alignment, quantification, quality analysis, statistics, and visualization
+  * Includes ten fully customizable aligners (Bowtie, Bowtie 2, BWA, GSNAP, Isaac 2, SHRiMP 2, STAR, TMAP, TopHat and TopHat 2)
+  * Applications for RNA-Seq, Small RNA-Seq, WGS/WES, Pathway enrichment, Fusion detection and Variant calling
+  * Allows users to create, save, share, or download analysis pipelines for automated and repeatable analysis
+  * Collaborate with others without transferring data
+  * Integrates microarray and next generation sequencing data
 1. **[Golden Helix: SNP and Variation Suite] (http://goldenhelix.com/SNP_Variation/)**
   * used for managing, analyzing and visualizing genotypic and phenotypic data; Features: Genome-wide association studies, genomic prediction, copy number analysis, small sample DNA-Seq workflows, large sample DNA-seq analysis, RNA-seq analysis.
 Supported files: .txt, excel XLS & XLSX, CEL, CHP, CNT, Illumina, Plink PED, TPED, BED, Agilent files, NimbleGen data summary files, VCF files, Impute2 GWAS files, HapMap format, MACH output, + 50 other formats
