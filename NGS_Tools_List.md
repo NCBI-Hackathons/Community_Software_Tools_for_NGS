@@ -67,11 +67,12 @@ consumes NCBI data directly
   * Input: BAM- uses BAMtools API to parse
    *Reference genome: FASTA
   *Output: VCF
-1. **[SOAPinde] (http://soap.genomics.org.cn/soapindel.html)**
+1. **[SOAPindel] (http://soap.genomics.org.cn/soapindel.html)**
   * Description: detects indels from NGS paired-end sequencing
   * Input: files with read alignment can be SOAP or SAM formats, users must also give raw reads in Fasta or Fastq
    * Reference Sequence used to align reads: FASTA
   * Output:
+  <hr/>
 1. **[2Kplus2] (https://github.com/danmaclean/2kplus2)**
   * Description: algorithm searches graphs produced by de novo assembler Cortex; c++ source code for SNP detection
 “2kplus2.cpp is a c++ source code for the detection and the classification of single nucleotide polymorphisms in transformed De Bruijn graphs using Cortex assembler.”
