@@ -222,6 +222,7 @@ on github, example data uses 1000 genomes dataset
   * Description: calls SNVs and detects de novo point mutations in families
   * Input: GLF or BAM or VCF (must have identical chromosome orders)
   * Output: VCF
+  <hr/>
 1. **[Bassovac] (http://tvap.genome.wustl.edu/tools/bassovac/)**
   * Description: Improved Bayesian inversion somatic caller; unlike other software packages, treats effects fully probabilisticallys instead of using ad-hoc modeling; effects are integrated at the atomic level and standard probability theory integrates read tallies to the sample level and to the tumor-normal pair level; "pending public release"
   * Input:
@@ -302,6 +303,7 @@ on github, example data uses 1000 genomes dataset
   * Description: identify germline variants, private and shared variants, somatic mutations, and somatic CNVs; detects indels
   * Input: SAMtools pileup
   * Output: VCF
+  <hr/>
 1. **[BAYSIC] (http://genformatic.com/baysic/)**
   * Description: Bayesian method; combines variant calls from different methods (GATK, FreeBayes, Atlas, Samtools, etc)
   * Input: VCF format from one or more variant calling programs
@@ -337,6 +339,7 @@ on github, example data uses 1000 genomes dataset
   * Description: command-line, standalone package program; available in Perl, Python, and R versions; predicts liklihood of a gene being related to a certain phenotype- “that directly tests the molecular mechanisms through which genetic variation affects phenotype.”; no actual expression data used, only in silico expression; “PrediXcan can detect known and novel genes associated with disease traits and provide insights into the mechanism of these associations.”
   * Input: genotype and phenotype file (doesn’t specify file type)
   * Output:default values: genelist, dosages (file format:  snpid rsid) , dosage_prefix, weights, output
+  <hr/>
 1. **[ATHENA] (http://ritchielab.psu.edu/software/athena-downloads)**
   * Description: Analysis Tool for Heritable and Environmental Network Associations; software package, combines machine learning model with biology and statistics to predict non-linear interactions
   * Input: Configuration file, Data file, Map file (includes rsID)
@@ -411,6 +414,7 @@ on github, example data uses 1000 genomes dataset
   * Description: (Ensembl) Variant Effect Predictor; determines effect of variants on genes, transcripts, and protein sequence; uses SIFT and PolyPhen
   * Input: Coordinates of variants and nucleotide changes; whitespace- separated format, VCF, pileup, HGVS
   * Output: VCF, JSON, Statistics
+  <hr/>
 1. **[ABSOLUTE] (http://www.broadinstitute.org/cancer/cga/absolute)**
   * Description: (Broad Institute); can estimate purity and ploidy to compute absolute copy number and mutation multiplicitie; reextracts data from the mixed DNA population
   * Input: HAPSEQ segdat or segmentation file
