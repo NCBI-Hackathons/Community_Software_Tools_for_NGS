@@ -725,7 +725,8 @@ on github, example data uses 1000 genomes dataset
   * Input: SAM, BAM
    * Reference file: FASTA
   * Output: STDOUT plot in PDF
-## Tool repositories, Analytical Pipelines, & Workflow Systems
+
+## Tool Repositories, Analytical Pipelines, & Workflow Systems
 ### ToolKits
 1. **[bamtools] (https://github.com/pezmaster31/bamtools)**
   * Description: command line tool kit, also API version; for reading, writing and manipulating BAM (genome alignment) files
@@ -747,11 +748,11 @@ on github, example data uses 1000 genomes dataset
   * Description: (Broad Institute) Java based command line tools for manipulating high throughput sequencing data in the BAM format; supported through GATK
   * Input: BAM, SAM, VCF
   * Output: BAM, SAM
-1. **[SAMtools] (http://samtools.sourceforge.net/)
+1. **[SAMtools] (http://samtools.sourceforge.net/)**
   * Description: provides utilities for manipulating alignments in the SAM format, including sorting, merging, indexing, and generating alignments; can be used for calling SNPs and Indels
   * Input: Conforms to the specifications produced by GA4GH File Formats working group
   * Output:
-1. **[VCFtools] (https://vcftools.github.io/specs.html)
+1. **[VCFtools] (https://vcftools.github.io/specs.html)**
   * Description: set of tools written in Perl and C++ for working with VCF files
   * Input: VCF, GZVCF, BCF
   * Output: Multiple, can be piped into another program
