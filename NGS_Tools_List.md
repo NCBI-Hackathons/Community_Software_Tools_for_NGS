@@ -19,6 +19,14 @@ has sra.dnanexus.com site: data downloads come directly from NCBI
 1. **[Ingenuity Variant Analysis] (http://www.ingenuity.com/products/variant-analysis)**
   * (QIAGEN) allows for variant identification and analysis, uses NCI-60 data set for cancer, Supported third part informatin: Entrez Gene, RefSeq, ClinVar; gives contextual details of results instead of just A to B relationship
   * Has own database-- “knowledge base” based on COSMIC, OMIM, and TCGA databases
+1. **[Lasergene Genomics Suite] (http://www.dnastar.com/t-products-dnastar-lasergene-genomics.aspx)**
+  * Comprehensive NGS software pipeline for assembly, alignment, variant calling and analysis of NGS data
+  * Supported workflows include: reference-guided and de novo genome and transcriptome assembly and analysis, metagenomics sample assembly, targeted resequencing, exome alignment, gene panels with validation control, variant analysis, and RNA-Seq, ChIP-Seq and miRNA alignment and analysis. 
+  * #1 in accuracy: fewer false negatives and better sensitivity compared to results obtained from other aligners
+  * Aligns exome data and performs variant calling an average of 3 times faster than alternative pipelines
+  * Annotates genomic data with allele and genotype frequency, functional impact predictions, evolutionary conservation scores and pathogenicity
+  * Supports all major NGS technologies (Illumina, Ion Torrent, Pac Bio and Roche 454) and project types
+  * Available on Windows, Mac OS X, Linux, and the Amazon Cloud
 1. **[NextGENe] (http://www.softgenetics.com/NextGENe.html)**
   * “perfect analytical partner for the analysis of desktop sequencing data produced by the ION PGM™, Roche Junior, Illumina MiSeq as well as high throughput systems as the Ion Torrent Proton, Roche FLX, Applied BioSystems SOLiD™ and Illumina® platforms.” runs on Windows, free-standing multi-application package-- SNP/Indel analysis, CNV prediction and disease discovery, whole genome alignment, etc.  
   * Data can be imported from Clinvar, dbSNP, Genbank: http://www.softgenetics.com/PDF/NextGene_UsersManual_web.pdf
