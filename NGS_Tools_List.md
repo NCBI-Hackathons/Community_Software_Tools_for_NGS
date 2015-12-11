@@ -58,7 +58,7 @@ consumes NCBI data directly
   * Genome browser: BED and BAM files, Public data- 1500 BED files available for every user
 1. **[Biodatomics] (http://www.biodatomics.com/)**
   * Open source platform (SaaS), analysis and genome sequencing tools, integrates over 400 genomic analysis open source tools and pipelines, have a private and public cloud version. Features: genomic data visualization, drag and drop interface, accelerated analysis, real-time collaboration
-  *They have a couple modules to do so, and have enabled parts of the sra toolkit
+  * They have a couple modules to do so, and have enabled parts of the sra toolkit
 1. **[SolveBio] (https://www.solvebio.com/)**
   * Software product, for clinical genomics professionals, manage, curate, report genomic variation
   * Has own data library -- data from NCBI
@@ -73,8 +73,8 @@ consumes NCBI data directly
 1. **[FreeBayes] (https://github.com/ekg/freebayes)**
   * Description: finds SNPs, Indels, MNPs; reports variants based on alignment; haplotype based
   * Input: BAM- uses BAMtools API to parse
-   *Reference genome: FASTA
-  *Output: VCF
+   * Reference genome: FASTA
+  * Output: VCF
 1. **[SOAPindel] (http://soap.genomics.org.cn/soapindel.html)**
   * Description: detects indels from NGS paired-end sequencing
   * Input: files with read alignment can be SOAP or SAM formats, users must also give raw reads in Fasta or Fastq
@@ -287,7 +287,7 @@ on github, example data uses 1000 genomes dataset
 1. **[SomaticSniper] (http://gmt.genome.wustl.edu/packages/somatic-sniper/)**
   * Description: command-line application to identify SNPs between tumor/normal pairs- predicts probability of difference between two
   * Input: BAM
-   *Reference Genome in FASTA
+   * Reference Genome in FASTA
   * Output: VCF
 1. **[Strelka] (https://sites.google.com/site/strelkasomaticvariantcaller/)**
   * Description: somatic variant calling workflow for matched tumor-normal samples; detects indels; runs on *nux-like platform
@@ -371,7 +371,7 @@ on github, example data uses 1000 genomes dataset
 1. **[Genome Track Analyzer] (http://ancorr.eimb.ru/)**
   * Description: compares genome tracks; allows user to compare DNA expression/binding;
   * Input: multiple: SGR/TXT, BED, BED6, GFF;  if using prealigned sequence data- use MACS peak caller: BAM, BED, SAM, ELAND
-  *Output:
+  * Output:
 1. **[GVCBLUP] (http://animalgene.umn.edu/gvcblub)**
   * Description: animal gene mapping; “genomic prediction and variance component estimation of additive and dominance effects”; standalone program, command line interface, writting in C++ and Java
   * Input:
@@ -383,7 +383,7 @@ on github, example data uses 1000 genomes dataset
 1. **[INTERSNP] (http://intersnp.meb.uni-bonn.de/)**
   * Description: GWIA for case-control SNP and quantitative traits; selected for joint analysis using priori information; Provides linear regression framework, Pathway Association Analysis, Genome-wide Haplotype Analysis,
   * Input: PLINK input formats (ped/map, tped/tfam, bed/bim/fam) Compatible with SetID files
-   *Gene reference file: Ensembl Release 75
+   * Gene reference file: Ensembl Release 75
   * Output: covariance matrix for regression models
 1. **[mtSet] (https://github.com/PMBio/mtSet)**
   * Description: Currently only the standalone version available, but moving to LIMIX software suite; offers set tests- allows for testing between variants and traits; accounts for confounding factors ex. relatedness
@@ -669,7 +669,7 @@ on github, example data uses 1000 genomes dataset
 1. **[CNVer] (http://compbio.cs.toronto.edu/cnver/)**
   * Description: Package program, command line interface; “supplements the depth-of-coverage with paired-end mapping”; Donor graph- unified framework- reduces sequence biases; only works with human build hg19 and hg18
   * Input: BAM, tab delimited text
-  *Output:
+  * Output:
 1. **[CNVrd2] (http://www.bioconductor.org/packages/devel/bioc/html/CNVrd2.html)**
   * Description: Part of Bioconductor; package program with command line interface; “measure human gene copy number for multiple samples”; written in R
   * Input: multiple; imports from DNAcopy, IRange, Rsamtools
